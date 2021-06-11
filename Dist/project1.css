@@ -1,0 +1,316 @@
+:root {
+    --blackg: radial-gradient(rgb(0, 0, 0), rgb(4, 4, 4), rgb(7, 7, 7), rgb(11, 11, 11), rgb(14, 14, 14), rgb(18, 18, 18), rgb(15, 15, 15), rgb(12, 12, 12), rgb(9, 9, 9), rgb(6, 6, 6), rgb(3, 3, 3), rgb(0, 0, 0));
+    --gradient: linear-gradient(to right, #360033, #0b8793);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pronounciation {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2vh;
+    margin: 1vh;
+    display: block;
+}
+
+h1 {
+    cursor: pointer;
+    overflow: hidden;
+    margin-inline: .6em;
+    text-align: center;
+    color: black;
+    font-size: .6em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signature {
+    margin-top: 1vh;
+    height: 7vh;
+    width: auto;
+}
+
+h2 {
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    font-size: 1em;
+    margin: 10px 0px 0px 0px;
+}
+
+h3 {
+    font-size: 3vh;
+    margin-inline: auto;
+    margin-bottom: 0;
+}
+
+h4 {
+    margin-bottom: 0;
+    font-size: 3vh;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.body-content {
+    display: grid;
+    font-size: 2em;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+}
+
+.contact-form {
+    color: white;
+    box-shadow: 0rem 0rem .5em .3em rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    margin-inline: auto;
+    background-size: 300%;
+    margin-top: 5vh;
+    background-image: var(--blackg);
+    display: flex;
+    animation: bg-animate 5s infinite alternate;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10vh;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    margin-top: 3vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    margin: 0;
+}
+
+textarea {
+    width: 50vw;
+    font-size: .5em;
+    padding: .4em;
+    resize: none;
+    min-width: 330px;
+    font-family: serif;
+    border-radius: .6vh;
+    border: black .2em solid;
+}
+
+#email {
+    min-width: 330px;
+    border-radius: .6vh;
+    border: black .2em solid;
+    margin-bottom: 3vh;
+    padding: .2em .4em;
+    display: block;
+    width: 40%;
+}
+
+.btn1 {
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5vh;
+    border-radius: 3em;
+    padding: 0.3em .8em;
+    width: max-content;
+    height: auto;
+    margin: 2vh 2vh;
+    cursor: pointer;
+    letter-spacing: .05rem;
+    transition: .1s;
+}
+
+.btn1:before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    box-shadow: inset 0rem 0rem 500rem rgba(255, 255, 255, .15);
+    filter: blur(10px);
+    background-color: transparent;
+}
+
+#header {
+    padding: 1vh;
+    width: 100%;
+}
+
+.btn1:hover {
+    box-shadow: 0rem 0rem .6em rgba(255, 255, 255, 0.8);
+}
+
+.btn2 {
+    font-size: 2vh;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: .3em .7em;
+    bottom: 0;
+    border: 2px solid;
+    border-radius: 50px;
+}
+
+.skills {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-block: 1em;
+    box-shadow: 0rem 0rem 1em .3em rgba(0, 0, 0, 0.2);
+    border-bottom: 2px white solid;
+    position: relative;
+    margin-inline: auto;
+}
+
+span {
+    width: 190px;
+    border: red solid 2px;
+    height: 109px;
+}
+
+.skill {
+    margin-inline: 10px;
+    cursor: pointer;
+    width: 6vh;
+    height: auto;
+}
+
+.btnbkg {
+    position: absolute;
+    color: red;
+    margin-left: 9px;
+    margin-top: 11px;
+    width: 5em;
+    height: 1.7em;
+}
+
+#project-image {
+    height: auto;
+    width: 30vw;
+    min-width: 350px;
+}
+
+.about-text {
+    max-width: 1000px;
+    font-size: 2.5vh;
+    margin: 3vh;
+}
+
+.content-main {
+    box-shadow: inset 0vh 0vh 5vh rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    background-image: var(--gradient);
+    background-size: 300%;
+    color: white;
+    height: 70vh;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    animation: bg-animate 5s infinite alternate;
+}
+
+button {
+    margin-top: 2.4vh;
+    color: white;
+    border-color: transparent;
+    font-size: 2vh;
+    border-radius: 5vh;
+    padding: .5vh 1vh;
+    background-color: rgb(62, 83, 206);
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.main-buttons {
+    display: flex;
+    padding-top: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+.projects {
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 10px lightgray, 0px 0px 0px lightgray, 0px 0px 10px lightgray;
+}
+
+.subject {
+    border-radius: 20px;
+    position: relative;
+    height: max-content;
+    width: 40%;
+    margin-bottom: 3vh;
+    border: white solid;
+    background-color: white;
+    padding-bottom: 1vh;
+    min-width: 350px;
+    color: black;
+}
+
+@keyframes bg-animate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.main {
+    width: 85vw;
+    height: max-content;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.project-content {
+    width: 100%;
+    box-shadow: 0em 0em .05em rgba(0, 0, 0, 0.5);
+    border-radius: .4em;
+    background-image: url("https://theartsdevelopmentcompany.org.uk/wp-content/uploads/2019/02/Website-Building-Landscape-1280x640.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+}
+
+.project-content:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 50%;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    text-align: center;
+}
