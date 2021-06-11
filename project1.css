@@ -43,6 +43,7 @@ h3 {
 }
 
 h4 {
+    margin-inline: auto;
     margin-bottom: 0;
     font-size: 3vh;
 }
@@ -184,6 +185,7 @@ span {
     margin-inline: 10px;
     cursor: pointer;
     width: 6vh;
+    padding: .5vh;
     height: auto;
 }
 
