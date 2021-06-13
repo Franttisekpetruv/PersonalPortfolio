@@ -1,87 +1,124 @@
-h1 {
-    cursor: pointer;
-    overflow: hidden;
-    margin-inline: .6em;
-    text-align: center;
-    color: black;
-    font-size: 3vh;
-    font-family: 'Poppins', sans-serif;
-}
-
-h2 {
-    position: relative;
-    margin-inline: auto;
-    font-size: 4vh;
-    margin-inline: 1em;
-}
-
-h3 {
-    margin-bottom: .3em;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-size: .6em;
-}
-
-#header {
-    background-color: white;
-    border-bottom: solid 1px black;
-    height: 4vh;
-    width: 100%;
-    position: sticky;
-    display: grid;
-    align-items: center;
-}
-
-#hamb {
-    margin: 0;
-    cursor: pointer;
-    margin-left: 10px;
-    left: 0px;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-}
-
-body {
-    background-color: #161616;
-    margin: 0;
-    height: 100vh;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-.body-content {
-    margin-inline: auto;
-    display: grid;
-    font-size: 2em;
-    height: 90%;
-    width: 100%;
-}
-
-.container {
-    display: flex;
-    align-items: flex-start;
-    margin-inline: auto;
-    align-content: center;
-    width: 80vw;
-}
-
-.sidebar {
-    color: white;
-    font-size: 4vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right: white .5vh solid;
-    padding: 1em;
-}
-
-.card_main {
-    font-size: 3vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1em;
-}
+        h1 {
+            cursor: pointer;
+            overflow: hidden;
+            margin-inline: .6em;
+            text-align: center;
+            color: black;
+            font-size: 3vh;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        h2 {
+            position: relative;
+            margin-inline: auto;
+            font-size: 4vh;
+            margin-inline: 1em;
+        }
+        
+        h3 {
+            margin-bottom: .3em;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            font-size: .6em;
+        }
+        
+        #header {
+            z-index: 3;
+            justify-content: flex-end;
+            width: 100%;
+            display: flex;
+            position: fixed;
+            align-items: center;
+            height: 10vh;
+            width: 100vw;
+            transition: all .3s ease-in;
+        }
+        
+        @media all and (max-width:900px) {
+            #header {
+                display: none;
+            }
+        }
+        
+        li {
+            color: white;
+            margin-inline: 1vw;
+        }
+        
+        ul {
+            margin-right: 2vw;
+            list-style-type: none;
+            flex-direction: row;
+            font-size: 3vh;
+            justify-self: flex-end;
+            display: flex;
+        }
+        
+        .signature {
+            height: 7vh;
+            margin-left: 2vw;
+            margin-right: auto;
+            width: auto;
+        }
+        
+        #hamb {
+            margin: 0;
+            cursor: pointer;
+            margin-left: 10px;
+            left: 0px;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+        }
+        
+        body {
+            background-color: #161616;
+            margin: 0;
+            height: 100vh;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .body-content {
+            margin-inline: auto;
+            display: grid;
+            font-size: 2em;
+            height: 90%;
+            width: 100%;
+        }
+        
+        .container {
+            margin-top: 20vh;
+            display: flex;
+            align-items: flex-start;
+            margin-inline: auto;
+            align-content: center;
+            width: 80vw;
+        }
+        
+        .sidebar {
+            color: white;
+            font-size: 4vh;
+            display: flex;
+            flex-direction: column;
+            height: 50vh;
+            justify-content: space-between;
+            border-right: white .5vh solid;
+            padding: 1em;
+        }
+        
+        .card_main {
+            height: 50vh;
+            font-size: 3vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }

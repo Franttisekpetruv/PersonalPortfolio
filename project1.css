@@ -78,6 +78,13 @@ body {
     padding-bottom: 10vh;
 }
 
+.signature {
+    height: 7vh;
+    margin-left: 2vw;
+    margin-right: auto;
+    width: auto;
+}
+
 #form {
     display: flex;
     align-items: center;

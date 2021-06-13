@@ -1,11 +1,10 @@
-const textEl = document.getElementById("text")
-const text = 'František Petrův'
-let idx = 1
+const nav = document.querySelector('#header')
+window.addEventListener('scroll', fixNav)
 
-writeText()
-
-function writeText() {
-    textEl.innerText = text.slice(0, idx)
-    idx++
-    setTimeout(writeText, 150)
+function fixNav() {
+    if (window.scrollY > nav.offsetHeight + 150) {
+        nav.classList.add('active')
+    } else {
+        nav.classList.remove('active')
+    }
 }

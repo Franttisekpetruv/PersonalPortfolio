@@ -4,6 +4,14 @@
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.pronounciation.top {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2vh;
+    margin: 1vh;
+    margin-top: 6vh;
+    display: block;
+}
+
 .pronounciation {
     font-family: 'Libre Baskerville', serif;
     font-size: 2vh;
@@ -22,8 +30,9 @@ h1 {
 }
 
 .signature {
-    margin-top: 1vh;
     height: 7vh;
+    margin-left: 2vw;
+    margin-right: auto;
     width: auto;
 }
 
@@ -38,7 +47,7 @@ h2 {
 h3 {
     font-size: 3vh;
     margin-inline: auto;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 h4 {
@@ -61,6 +70,12 @@ body {
     width: 100%;
 }
 
+.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: white 1px solid;
+    color: white;
+}
+
 .contact-form {
     color: white;
     box-shadow: 0rem 0rem .5em .3em rgba(0, 0, 0, 0.2);
@@ -69,6 +84,7 @@ body {
     background-size: 300%;
     margin-top: 5vh;
     background-image: var(--blackg);
+    text-align: center;
     display: flex;
     animation: bg-animate 5s infinite alternate;
     flex-direction: column;
@@ -76,7 +92,7 @@ body {
     padding-bottom: 10vh;
 }
 
-#form {
+form {
     display: flex;
     align-items: center;
     margin-top: 3vh;
@@ -86,6 +102,13 @@ body {
 
 h5 {
     margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
 }
 
 textarea {
@@ -139,9 +162,47 @@ textarea {
     background-color: transparent;
 }
 
+ul {
+    margin-right: 2vw;
+    list-style-type: none;
+    flex-direction: row;
+    font-size: 3vh;
+    justify-self: flex-end;
+    display: flex;
+}
+
+li {
+    margin-inline: 1vw;
+}
+
 #header {
-    padding: 1vh;
+    z-index: 3;
+    justify-content: flex-end;
     width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    transition: all .3s ease-in;
+}
+
+#header {
+    z-index: 3;
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    transition: all .3s ease-in;
+}
+
+@media all and (max-width:900px) {
+    #header {
+        display: none;
+    }
 }
 
 .btn1:hover {
@@ -165,12 +226,19 @@ textarea {
     background-color: white;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-block: .4em;
+    align-items: center;
     box-shadow: 0rem 0rem 1em .3em rgba(0, 0, 0, 0.2);
     border-bottom: 2px white solid;
     position: relative;
     margin-inline: auto;
+    margin-bottom: 5vh;
+}
+
+h6 {
+    font-size: 3vh;
+    margin: .6em;
 }
 
 span {
